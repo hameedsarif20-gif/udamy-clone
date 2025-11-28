@@ -76,6 +76,14 @@ display: block;
   color: white;
   padding: 10px;
   border-radius: 30px;
+  border: solid #a435f0 1px;
+}
+.categories P:hover{
+  transition: 1s;
+  background-color: transparent;
+  color: #070607;
+  border: solid #a435f0 1px;
+  cursor: pointer;
 }
 .sale-image{
   position: relative;
@@ -91,7 +99,23 @@ display: block;
   position: absolute;
   top: 10%;
   left: 10%;
+  animation: zoom;
+  animation-duration: 2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
 }
+@keyframes zoom{
+  0%{
+    transform: scale(0);
+    opacity: 0;
+  }
+  100%{
+     opacity: 1;
+    transform: scale(1);
+   
+  }
+}
+
 .recommented__title{
     padding: 20px;
 }
